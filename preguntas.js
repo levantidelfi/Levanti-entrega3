@@ -51,6 +51,73 @@ const data = {
                 "respuesta2": ["1789", "true"],
                 "respuesta3": ["1785", "false"],
                 "respuesta4": ["1782", "false"]
-            }
+            },
+
+            {        
+                "pregunta": "Cual de estas afirmaciones es correcta?",
+                "respuesta1": ["Los tiburones son ciegos", "false"],
+                "respuesta2": ["Los tiburones tienen vision desarrollada, pero no distinguen colores", "true"],
+                "respuesta3": ["Los tiburones son zordos", "false"],
+                "respuesta4": ["Los tiburones pueden ver y distinguen perfectamente los colores", "false"]
+            },
+
+            {        
+                "pregunta": "En que año se invento la computadora?",
+                "respuesta1": ["1828", "false"],
+                "respuesta2": ["1822", "true"],
+                "respuesta3": ["1840", "false"],
+                "respuesta4": ["1830", "false"]
+            },
+            
+            {        
+                "pregunta": "Cual es la capital de la India?",
+                "respuesta1": ["Bangalore", "false"],
+                "respuesta2": ["Delhi", "true"],
+                "respuesta3": ["Chennai", "false"],
+                "respuesta4": ["Calcuta", "false"]
+            }, 
+            {        
+                "pregunta": "Cual es la ciudad mas peligrosa del mundo?",
+                "respuesta1": ["Tijuana", "false"],
+                "respuesta2": ["Caracas", "true"],
+                "respuesta3": ["San Salvador", "false"],
+                "respuesta4": ["Medellin", "false"]
+            }, 
+            {        
+                "pregunta": "Cual es el animal mas peligroso?",
+                "respuesta1": ["Serpientes", "false"],
+                "respuesta2": ["Mosquito", "true"],
+                "respuesta3": ["Elefantes africanos", "false"],
+                "respuesta4": ["Hipopótamos", "false"]
+            }, 
+            {        
+                "pregunta": " ¿En qué año se creó la Organización de las Naciones Unidas?",
+                "respuesta1": ["1949", "false"],
+                "respuesta2": ["1945", "true"],
+                "respuesta3": ["1955", "false"],
+                "respuesta4": ["1960", "false"]
+            }, 
+            {        
+                "pregunta": " ¿Cuál es la lengua más hablada del mundo?",
+                "respuesta1": ["Ingles", "false"],
+                "respuesta2": ["Chino Mandarin", "true"],
+                "respuesta3": ["Español", "false"],
+                "respuesta4": ["Frances", "false"]
+            }, 
+            {        
+                "pregunta": "¿Cuál es la ciudad más poblada de África?",
+                "respuesta1": ["Congo", "false"],
+                "respuesta2": ["El Cairo", "true"],
+                "respuesta3": ["Nairobi", "false"],
+                "respuesta4": ["Pretoria", "false"]
+            }, 
+            {        
+                "pregunta": "¿De qué grupo es la canción “Smells like a teen spirit”?",
+                "respuesta1": ["Guns N'Roses", "false"],
+                "respuesta2": ["Nirvana", "true"],
+                "respuesta3": ["Robert Plant", "false"],
+                "respuesta4": ["The Police", "false"]
+            }, 
+            
         ]
 }

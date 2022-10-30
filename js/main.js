@@ -26,9 +26,15 @@ function buscarPreguntas() {
     respondidasStorage = JSON.parse(respondidasStorage);
 
     // console.log(respondidasStorage.includes(2))
-
+        //  let preguntasDesordenar = 
     // do{
-        let index = Math.floor( Math.random() * data.preguntas.length )    
+        let index = 
+        Math.floor( Math.random() * data.preguntas.length )   
+       
+        for(let i= 0; i > index; i+=1){
+            index.sort()
+        }
+         
 
     // }while(!respondidasStorage.includes(index))
     guardarIndex(index)
@@ -97,12 +103,38 @@ function cargarContador(){
 
 
 function mostrarTextoIncorrecta(){    
-    resultado.innerHTML="respuesta Incorrecta :("
+    // resultado.innerHTML="respuesta Incorrecta :("
+    Swal.fire({
+        title: 'Respuesta Incorrecta',
+        text: 'Intentalo en otro momento',
+        imageUrl: 'https://psfonttk.com/wp-content/uploads/2020/08/emoji-triste.png',
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
 }
 
 function mostrarTextoCorrecto(){
-    resultado.innerHTML="respuesta Correcta :)"
+    // resultado.innerHTML="respuesta Correcta :)"
+    Swal.fire({
+        title: 'Respuesta correcta',
+        text: '¡Excelente trabajo, Sumaste 1 punto!',
+        imageUrl: 'https://s-media-cache-ak0.pinimg.com/236x/ec/13/a7/ec13a753972c254761be4d9d5666d341.jpg?noindex=1',
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
 }
+
+// function evaluarRespuesta (){
+//     respuestaIngresada.addEventListener("click", () => {
+//         if (respuestaIngresada === true){
+//            respuestaIngresada.style.color="green";
+//         }else{
+//             respuestaIngresada.style.color="red";
+//         }
+//     })
+// }
 
 
 
