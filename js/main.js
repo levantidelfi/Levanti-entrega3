@@ -28,20 +28,39 @@ function buscarPreguntas() {
     // console.log(respondidasStorage.includes(2))
         //  let preguntasDesordenar = 
     // do{
-        let index = 
-        Math.floor( Math.random() * data.preguntas.length )   
+        // for (const p of data.preguntas) {
+        //     let opciones = respondidasStorage;
+        //     opciones.push(p.respuesta);
+        //     for (let i = 0; i < 4; i++) {
+        //       opciones.sort(() => Math.random() - 0.5);
+        //  ++   }}
+         let index = Math.floor( Math.random() * data.preguntas.length )
+        
+        
+         
+    
+        // while(respondidasIndex.includes(respondidasStorage)){
+        //     respondidasStorage++;
+        // }
+        
+        
+          
        
-        for(let i= 0; i > index; i+=1){
-            index.sort()
-        }
+        // for(let i= 0; i > index; i+=1){
+        //     index.sort()
+        // }
+
+        
          
 
     // }while(!respondidasStorage.includes(index))
+    
     guardarIndex(index)
     
     console.log(respondidasStorage);
     cargarPreguntas(index)
-
+  
+   
 };
 
 function guardarIndex(index){
@@ -51,6 +70,8 @@ function guardarIndex(index){
 }
 
 
+
+ 
 
 
 
@@ -100,6 +121,8 @@ function cargarContador(){
     let elementoContador = document.getElementById('contador');
     elementoContador.innerHTML= "tienes " + contador+ " puntos"
 }
+
+
 
 
 function mostrarTextoIncorrecta(){    
