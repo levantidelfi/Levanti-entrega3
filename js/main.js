@@ -1,16 +1,4 @@
-// // let objetoPregunta = JSON.parse(basePreguntas);
-// console.log(typeof basePreguntas);
-// // console.log(JSON.parse(objetoPregunta))
-// // let respuestas = [objetoPregunta.incorrectas + objetoPregunta.respuesta];
-// // console.log(respuestas[0]);
 
-// function cargarPregunta (){
-//     objetoPregunta.incorrectas
-   
-//     // document.getElementById("pregunta").innerHTML = objetoPregunta.pregunta
-
-    
-// }
 
 
 
@@ -20,40 +8,27 @@ let respondidasIndex= []
 let contador = 0;
 
 
+
 // esta funcion genera un numero aleatorio entre el 0 y el length de el array data.preguntas
 function buscarPreguntas() {
     let respondidasStorage = window.localStorage.getItem('respondidasIndex');
     respondidasStorage = JSON.parse(respondidasStorage);
 
-    // console.log(respondidasStorage.includes(2))
-        //  let preguntasDesordenar = 
-    // do{
-        // for (const p of data.preguntas) {
-        //     let opciones = respondidasStorage;
-        //     opciones.push(p.respuesta);
-        //     for (let i = 0; i < 4; i++) {
-        //       opciones.sort(() => Math.random() - 0.5);
-        //  ++   }}
-         let index = Math.floor( Math.random() * data.preguntas.length )
+   
+        let index = data.preguntas.length
+        // let unique = [...new Set(index)]
+        // console.log(unique)
         
-        
-         
-    
-        // while(respondidasIndex.includes(respondidasStorage)){
-        //     respondidasStorage++;
-        // }
-        
-        
-          
+        // for (let p in data.preguntas) {
+        //     if(data.preguntas.indexOf(index) === -1){
+        //         data.preguntas[p] = index;
+        //       }
+              
+        //     }
        
-        // for(let i= 0; i > index; i+=1){
-        //     index.sort()
-        // }
-
+            console.log(data.preguntas);
         
-         
-
-    // }while(!respondidasStorage.includes(index))
+    
     
     guardarIndex(index)
     
@@ -67,7 +42,9 @@ function guardarIndex(index){
     respondidasIndex.push(index)
     let stringyRespondidas = JSON.stringify(respondidasIndex)
     window.localStorage.setItem('respondidasIndex', stringyRespondidas)
+    console.log(stringyRespondidas)
 }
+
 
 
 
@@ -126,7 +103,7 @@ function cargarContador(){
 
 
 function mostrarTextoIncorrecta(){    
-    // resultado.innerHTML="respuesta Incorrecta :("
+   
     Swal.fire({
         title: 'Respuesta Incorrecta',
         text: 'Intentalo en otro momento',
@@ -138,7 +115,7 @@ function mostrarTextoIncorrecta(){
 }
 
 function mostrarTextoCorrecto(){
-    // resultado.innerHTML="respuesta Correcta :)"
+  
     Swal.fire({
         title: 'Respuesta correcta',
         text: '¡Excelente trabajo, Sumaste 1 punto!',
@@ -149,15 +126,6 @@ function mostrarTextoCorrecto(){
       })
 }
 
-// function evaluarRespuesta (){
-//     respuestaIngresada.addEventListener("click", () => {
-//         if (respuestaIngresada === true){
-//            respuestaIngresada.style.color="green";
-//         }else{
-//             respuestaIngresada.style.color="red";
-//         }
-//     })
-// }
 
 
 
@@ -168,29 +136,4 @@ let respuestaContada = document.querySelectorAll('.respuestaIngresada')
 
 
 
-// function sumarPuntos(){
-//     while(respondidasContada === true){
-//     console.log('Sumaste tantos puntos')
-//     // let data1 = respondidasIndex =+ respondidasStorage;
-//     // data1.innerText
-// }
-// }
 
-
-// function respuestaCorrecta(){
-//     console.log(respuestaIngresada)
-// //    if(respuestaDada = data.preguntas[0].respuesta2[1])
-// }
-
-// let objetoPregunta = basePreguntas[0]
-//  let opciones = objetoPregunta.incorrectas.length
-//  document.getElementById("opcion-1").innerHTML = opciones[0]
-
-// function cargarPregunta (){
-   
-//     document.getElementById("pregunta").innerHTML = objetoPregunta.pregunta
-
-    
-// }
-
-// cargarPregunta(0)
